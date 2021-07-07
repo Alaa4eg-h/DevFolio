@@ -1,0 +1,422 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500;700&display=swap");
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* General Rules */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  width: 100%;
+  color: #4e4e4e;
+  background-color: rgb(245, 245, 245);
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  color: inherit;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+
+.bg {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  z-index: 0;
+}
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.underline {
+  background-color: #0078ff;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #4e4e4e;
+  letter-spacing: normal;
+}
+
+.section-underline {
+  width: 60px;
+  height: 5px;
+  margin: 20px auto 0 auto;
+}
+
+/* Start Header */
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__logo {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 1.5rem;
+}
+
+.nav__link {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.active::before {
+  width: 90%;
+}
+
+.nav__link:hover::before {
+  width: 90%;
+}
+
+/* .active::after {
+  width: 90%;
+} */
+
+/* start home */
+.home {
+  height: 100vh;
+}
+
+.home__bg {
+  background: url("/img/intro-bg.jpg") no-repeat top center;
+}
+
+.home__bg::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home__data {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__title {
+  font-size: 7.2rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.home__subtitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* start about */
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  padding: 4rem;
+  box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 15%);
+}
+
+.about__data-info {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about__info {
+  padding: 3rem;
+}
+
+.about__info-item {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.about__info-item strong {
+  color: #000;
+  letter-spacing: normal;
+  font-size: 1.6rem;
+}
+
+.about__skills-title {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.about__skill {
+  margin-bottom: 2rem;
+}
+
+.about__skill-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.about__skill-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #cde1f8;
+}
+
+.about__skill-value {
+  background-color: #0078ff;
+  display: inline-block;
+  height: 100%;
+}
+
+.skill--html {
+  width: 85%;
+}
+.skill--css {
+  width: 75%;
+}
+.skill--php {
+  width: 50%;
+}
+.skill--javascript {
+  width: 90%;
+}
+
+.about__details {
+  padding: 2rem;
+}
+
+.about__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.about__underline {
+  width: 10rem;
+  height: 0.6rem;
+  margin: 1rem 0 4rem;
+}
+
+.about__details p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+  margin-bottom: 2rem;
+}
+
+/* start services */
+.section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem 3rem;
+}
+
+.services__box {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 5%);
+}
+
+.services__icon-wrap {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 7px solid #0078ff;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  transition: 0.3s;
+}
+
+.services__icon-wrap:hover {
+  border-color: #cde1f8;
+  background-color: #0078ff;
+}
+
+.services__icon-wrap:hover .services__icon {
+  color: #fff;
+}
+
+.services__icon {
+  font-size: 4rem;
+}
+
+.services__title {
+  font-weight: 500;
+}
+.services__desc {
+  letter-spacing: normal;
+  color: #4e4e4e;
+  margin-top: 1rem;
+}
+
+/* start counter */
+.counter__bg {
+  background: url("/img/counters-bg.jpg") no-repeat top left fixed;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.counter__bg::before {
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+
+.counter__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter__icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #cde1f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.counter__icon {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.counter__value {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.counter__name {
+  color: #fff;
+}
