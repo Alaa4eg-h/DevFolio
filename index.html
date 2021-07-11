@@ -8,6 +8,9 @@
     <title>DevFolio</title>
     <!-- Boxicons cdn -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper bundle -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -402,6 +405,35 @@
                 </div>
             </div>
         </section>
+
+        <!-- start testimoials -->
+        <section class="testimonials">
+            <div class="bg testimonials-bg">
+                <div class="container testimonials__container swiper-container">
+                    <div class="testimonials__slider-wrapper swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/testimonial-2.jpg" alt="" class="testi__img">
+
+                            <h3 class="testi__title">Marta Socrate</h3>
+                            <p class="testi__desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/testimonial-4.jpg" alt="" class="testi__img">
+
+                            <h3 class="testi__title">Marta Socrate</h3>
+                            <p class="testi__desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -417,6 +449,8 @@
 
     <!-- typed js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- swiper-bundle -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="./js/main.js"></script>
 </body>

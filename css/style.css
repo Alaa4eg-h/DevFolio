@@ -479,3 +479,46 @@ img {
   font-size: 3rem;
   color: #0078ff;
 }
+
+/* Start testimonials */
+
+.testimonials-bg {
+  background: url("../img/portfolio-details-3.jpg") no-repeat top left;
+  background-size: cover;
+}
+
+.testimonials-bg::before {
+  background-color: #0078ff;
+  opacity: 0.8;
+}
+.testimonials__container {
+  width: 600px;
+  height: 400px;
+}
+
+.testimonials__slider-wrapper {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.testi__img {
+  border-radius: 50%;
+}
+
+.testi__title {
+  color: #fff;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.testi__desc {
+  color: #fff;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
