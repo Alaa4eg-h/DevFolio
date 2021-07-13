@@ -148,13 +148,14 @@ img {
 .header__container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr 50%;
   align-items: center;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .nav__item {
@@ -600,4 +601,114 @@ img {
   font-weight: 300;
   letter-spacing: 1.8px;
   margin-bottom: 2rem;
+}
+
+.contact__bg {
+  background: url("../img/overlay-bg.jpg") no-repeat top left;
+  padding: 4rem 0;
+  box-shadow: 0px 9px 14px 0px rgb(0 0 0 / 25%);
+}
+
+.contact__bg::before {
+  background-color: #0078ff;
+  opacity: 0.4;
+}
+
+.contact__container {
+  background-color: #fff;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.input,
+.textarea {
+  height: 5rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.textarea {
+  height: auto;
+  resize: none;
+}
+
+.btn {
+  background-color: #0078ff;
+  color: #fff;
+  width: 200px;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact__desc {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+  margin-bottom: 2rem;
+}
+
+.contact__info-details {
+  margin-bottom: 1.5rem;
+}
+
+.contact__icon {
+  color: #0078ff;
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.contact__socail-link {
+  border: 3px solid #0078ff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.contact__socail-link:hover {
+  border-color: #cde1f8;
+  background-color: #0078ff;
+}
+
+.contact__socail-link:hover .contact__socail-icon {
+  color: #fff;
+}
+.contact__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 2rem;
+}
+.contact__socail-icon {
+  color: #4e4e4e;
+  font-size: 2rem;
+}
+/* start footer */
+.footer {
+  background-color: #0078ff;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer__copyright {
+  margin-bottom: 1.2rem;
 }
